@@ -1,0 +1,30 @@
+// .ant-menu-light.ant-menu-horizontal {
+//   & > .ant-menu-item-selected,
+//   & > .ant-menu-item-active,
+//   & > .ant-menu-item:hover {
+//     color: green;
+
+//     &:after {
+//       border-bottom-width: 2px;
+//       border-bottom-color: green;
+//     }
+//   }
+//   & > .ant-menu-submenu {
+//     &-selected {
+//       &:after {
+//         border-bottom-width: 2px;
+//         border-bottom-color: green;
+//       }
+//     }
+//     &:hover {
+//       &:after {
+//         border-bottom-width: 2px;
+//         border-bottom-color: green;
+//       }
+//     }
+//   }
+// }
+
+// .ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
+//   color: green;
+// }
