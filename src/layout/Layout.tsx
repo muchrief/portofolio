@@ -1,11 +1,11 @@
 import { Layout } from "antd";
 import { AnimatePresence, motion } from "framer-motion";
-import HeaderMenu from "../components/menu/Menu";
-import AnimatedOutlet from "../components/animated/AnimatedOutlet";
 import { useLocation } from "react-router-dom";
+import AnimatedOutlet from "../components/animated/AnimatedOutlet";
+import HeaderMenu from "../components/menu/Menu";
 import { useIcon } from "../hook/icon";
 
-const { Content, Header, Footer } = Layout;
+const { Content, Header } = Layout;
 
 function LayoutView() {
   const location = useLocation();
@@ -52,33 +52,9 @@ function LayoutView() {
             >
               <AnimatedOutlet />
             </motion.div>
-            <Footer
-              style={{
-                height: 24,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <p>
-                Property of &copy; <span>PDC Media Grup</span>
-              </p>
-            </Footer>
           </AnimatePresence>
         </div>
       </Content>
-      {/* <Footer
-        style={{
-          height: 24,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <p>
-          Property of &copy; <span>PDC Media Grup</span>
-        </p>
-      </Footer> */}
     </Layout>
   );
 }

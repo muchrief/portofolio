@@ -1,5 +1,6 @@
 import { Flex } from "antd";
 import { useIcon } from "../hook/icon";
+import useTitle from "../hook/useTitle";
 
 type Props = {
   title?: string;
@@ -8,6 +9,7 @@ type Props = {
 function InProcessView(props: Props) {
   const { getIcon } = useIcon();
 
+  useTitle(props.title || "");
   return (
     <Flex
       justify="center"
